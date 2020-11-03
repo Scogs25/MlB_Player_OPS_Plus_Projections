@@ -33,4 +33,26 @@ For Modeling, It was decided that four different types of models would be ideal.
 
 
 ## Final Modeling and Analysis
+ Due to it's best performance, the simple Linear Regression was selected as the final model. It achieved the best mean abosoulte error of about 15 points and more importantly it achieved the best rmse of about 19 points. After looking at a residuals plot, the variance in error was clearly random so I was not concerned with homoscedasticity. 
+  ![Image](https://raw.githubusercontent.com/Scogs25/MlB_Player_OPS_Plus_Projections/main/pngs/Residuals_Plot_for_4th_Year_Projections.png)
+ 
+ The coefficents of this final model were analyzed to determine what offensive stats matter the most and should be looked at further.
+ 
+ ![Image](https://raw.githubusercontent.com/Scogs25/MlB_Player_OPS_Plus_Projections/main/pngs/Feature_Coefficients_4th_Season_Projections.png)
 
+As you can see above, slugging percentage played the largest role in projecting a player's 4th year OPS+. Slugging was then looked at further to see if any further insights could be found. 
+ ![Image](https://github.com/Scogs25/MlB_Player_OPS_Plus_Projections/blob/main/pngs/How_Past_Slugging_Performance_Influences_Future_Offensive_Output.png)
+ 
+ As you can see above players whose slugging in their first three season was elite (top 25% of players) performed significantly better than the general population of players. Please note that an OPS+ is conisdered average so the average of the elite group was 22% better than average. A one sample means test confirmed that
+ the differnce between these two groups is statistically siginificant.
+ 
+ ## Conclusions and Next Steps
+  Through this poject, Please see the following insights that GM's should look at closely when evaulating players. 
+  1. Look for players who have elite slugging percentage, we found players belonging to this group performed on average 22% better than an average player
+  1. Look closely at a players avergae OPS+ over their first three seasons, We found a R^.2 of .55 between avergae OPS+ and a player's OPS+ in their fifth season
+  1. Prioritize Power Hitters above all else, we found a small differnce between hitters who can hit for both power and contact and hitters who only hit for power. However, we found a big differnce in OPS+ between hitters who can only hit for contact versus hitters who only hit for power. 
+  
+ ![Image](https://raw.githubusercontent.com/Scogs25/MlB_Player_OPS_Plus_Projections/main/pngs/5th_Season_OPS%2B_projections.png)
+ ![Image](https://raw.githubusercontent.com/Scogs25/MlB_Player_OPS_Plus_Projections/main/pngs/How_Different_Types_of_Hitters_Perform_in_6th_Season.png)
+  
+  As for next steps, I would like to apply this model to free agents and see if using their last three years can accuractly predict their next three years. If this does not work, I would like to make a completly new model for free agents.
