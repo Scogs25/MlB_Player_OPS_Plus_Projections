@@ -15,7 +15,7 @@ The data used for this project was offensive statistics for players on a season 
 All visulaizations used for both this Readme and the presenation pdf can be found in the pngs folder.
  The pdf 'MLB_Player_OPS+_Projections' contains the  pdf presentation of this project.
  
-Please see the goals of the code contained in the notebook below. 
+Please see the goals of the code contained in the notebooks below. 
  ### Master_notebook.ipynb
   - Collect mlb player offensive data from 2000-2020 using sports reference API  models
   - Compile all player offensive data into large dataframe for EDA,analysis,modeling
@@ -24,6 +24,9 @@ Please see the goals of the code contained in the notebook below.
   - Use Clustering as a feature engineering technique to help improve regression models
   - Build models with different paramters to determine best performing model
   - Select Final Model and conduct Model analysis
+ ### Modeling_Adjustments.ipnyb
+ - Contains the code to build a baseline model
+ - Baseline Model performance used as a reference when evaluating other models
   
 ## Modeling and Clustering Processess
 For Modeling, It was decided that four different types of models would be ideal. The belief was that four distinct types of models and varying hyper parameters of those models would lead to an ideal model in terms of performance. The four different models that were used to create these multi year projections were a Simple Linear Regression Model, Lasso Model, Ridge Model, and a Simple Neural Network Model. A baseline model was constructed as well for reference. The baseline model achieved a RSME of 21.0 and MAE of 16.4. The Linear Regression achieved a mean absolute error of about 15 points and a root mean square error of about 19 points. The Lasso model achieved similar results with a mean absolute error of about 15.1 points and 19.3 points for root mean square error.  The Ridge Model performed nearly identically to the Lasso Model achieveing 15.1 and 19.3 for mae and rsme respectively. The Neural Network Model surprisingly performed the poorest. As it achieved an rmse of 22.5. Before these models were trained on data, a cluster model was applied to the dataset to assign players to a cluster. The goals of this clustering was to provide more info the models could use to improve predictions. Please see the images below to see how the clusters were created and how well players in each cluster have performed.  
