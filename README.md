@@ -58,4 +58,4 @@ As you can see above, slugging percentage played the largest role in projecting 
  ![Image](https://raw.githubusercontent.com/Scogs25/MlB_Player_OPS_Plus_Projections/main/pngs/5th_Season_OPS%2B_projections.png)
  ![Image](https://raw.githubusercontent.com/Scogs25/MlB_Player_OPS_Plus_Projections/main/pngs/How_Different_Types_of_Hitters_Perform_in_6th_Season.png)
   
-  As for next steps, I would like to apply this model to free agents and see if using their last three years can accuractly predict their next three years. If this does not work, I would like to make a completly new model for free agents.
+  As for next steps, I would like to apply what I have learned to building a model to project free agents' future offensive production. This model could be used with the arbitration projections to give General Manager's even more information to make decisions on roster decisions. 
